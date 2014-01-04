@@ -1,0 +1,9 @@
+Building livecoin
+
+See doc/readme-qt.rst for instructions on building livecoin-QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of livecoin.
+
+See doc/build-*.txt for instructions on building livecoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of livecoin.
