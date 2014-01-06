@@ -22,4 +22,4 @@ Forward port 7999 in your router firewall and/or software firewalls for more con
 Technical Support
 -----------------
 If you have any issues, you can get support at the livecoin forum:
-� http://livechains.net/forums
+� http://livecoin.co/forums

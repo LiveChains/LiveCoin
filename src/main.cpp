@@ -830,14 +830,144 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 200 * COIN;
 
+        if(nHeight < 1080)
+    {
+        nSubsidy = 2 * COIN;
+    }
+    else if(nHeight < 1600)
+    {
+        nSubsidy = 1 * COIN;
+    }
+    else if(nHeight < 2400)
+    {
+        nSubsidy = 2 * COIN;
+    }
+    else if(nHeight < 3200)
+    {
+        nSubsidy = 5 * COIN;
+    }
+    else if(nHeight < 4000)
+    {
+        nSubsidy = 8 * COIN;
+    }
+    else if(nHeight < 4800)
+    {
+        nSubsidy = 11 * COIN;
+    }
+    else if(nHeight < 5600)
+    {
+        nSubsidy = 14 * COIN;
+    }
+    else if(nHeight < 6400)
+    {
+        nSubsidy = 17 * COIN;
+    }
+    else if(nHeight < 9400)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 10000)
+    {
+        nSubsidy = 23 * COIN;
+    }
+    else if(nHeight < 12400)
+    {
+        nSubsidy = 26 * COIN;
+    }
+    else if(nHeight < 13200)
+    {
+        nSubsidy = 29 * COIN;
+    }
+    else if(nHeight < 14000)
+    {
+        nSubsidy = 32 * COIN;
+    }
+    else if(nHeight < 15800)
+    {
+        nSubsidy = 35 * COIN;
+    }
+    else if(nHeight < 16000)
+    {
+        nSubsidy = 38 * COIN;
+    }
+    else if(nHeight < 17000)
+    {
+        nSubsidy = 41 * COIN;
+    }
+    else if(nHeight < 18000)
+    {
+        nSubsidy = 44 * COIN;
+    }
+    else if(nHeight < 19000)
+    {
+        nSubsidy = 47 * COIN;
+    }
+    else if(nHeight < 20000)
+    {
+        nSubsidy = 50 * COIN;
+    }
+    else if(nHeight < 43200)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 54000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 64800)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 75600)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 86400)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 96400)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 164000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 184000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 264000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 284000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 364000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 384000)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 400400)
+    {
+        nSubsidy = 20 * COIN;
+    }
+    else if(nHeight < 420480)
+    {
+        nSubsidy = 200 * COIN;
+    }
 
     // Subsidy is cut in half every 420480 blocks, which will occur approximately every 2 years
-    nSubsidy >>= (nHeight / 420480); // livecoin: 420k blocks in ~2 years
-
+    nSubsidy >>= (nHeight / 420480); // marketvaluedcoin: 420k blocks in ~2 years
 
     return nSubsidy + nFees;
 }
-
 
 int nTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
 static const int nTargetSpacing = 2.5 * 60; // 2.5 minutes
